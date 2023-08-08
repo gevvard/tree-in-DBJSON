@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --rct-item-height: 100%;
+  --rct-color-tree-focus-outline: transparent;
+  --rct-color-focustree-item-selected-bg: transparent;
+  --rct-color-focustree-item-focused-border: transparent;
+}
+
+.menuContainer {
+  width: 330px;
+  min-height: 300px;
+}
+
+.addMenu {
+  border: 1.5px dashed #0366d6;
+  max-width: 370px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+
+  svg {
+    color: #0366d6;
+  }
+
+  div {
+    width: 20px;
+    min-height: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+
+.addMenuInput {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 10px;
+
+  .icon {
+    font-size: 30px;
+    color: #0366d6;
+  }
+
+  fieldset {
+    width: 330px;
+    font-size: 13px;
+    font-size: 13px;
+    border: 1px solid #a2aed2;
+    border-radius: 2px;
+  }
+
+  input {
+    width: 80%;
+    margin: 2% 10%;
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+    border-radius: 4px;
+
+    &:active,
+    &:focus {
+      border-color: #a2aed2;
+      outline: none;
+    }
+  }
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 1px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.icon,
+.delete {
+  margin: 0 5px;
+  font-size: 15px;
+}
+
+.delete {
+  color: #c72f2f;
+}
+
+.addForm {
+  margin-top: 15px;
+  width: 100%;
+
+  input {
+    width: 80%;
+    margin-right: 5%;
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+    border-radius: 4px;
+
+    &:active,
+    &:focus {
+      border-color: #a2aed2;
+      outline: none;
+    }
+  }
+
+  svg {
+    color: white;
+  }
+}
+
+.menuCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+ul {
+  background-color: transparent;
+}
+
+.wrapper {
+  padding: 2%;
+  background-color: #f6f8fa;
+}
+
+li {
+  width: 400px !important;
+  >div {
+    padding-left: 20px;
+    margin-top: 5%;
+
+    >button {
+      background: #0366d6 !important;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}
+
+svg {
+  cursor: pointer;
+}
+
+.homeIcon {
+  margin-right: 5px;
+}
